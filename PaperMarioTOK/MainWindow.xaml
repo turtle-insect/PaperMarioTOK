@@ -13,7 +13,8 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="File">
-                <MenuItem Header="Open" Click="MenuItemFileOpen_Click"/>
+                <MenuItem Header="Open..." Click="MenuItemFileOpen_Click"/>
+                <MenuItem Header="Force Open..." Click="MenuItemFileForceOpen_Click"/>
                 <MenuItem Header="Save" Click="MenuItemFileSave_Click"/>
                 <Separator/>
                 <MenuItem Header="Exit"/>

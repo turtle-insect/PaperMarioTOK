@@ -35,6 +35,15 @@ namespace PaperMarioTOK
 			DataContext = new ViewModel();
 		}
 
+		private void MenuItemFileForceOpen_Click(object sender, RoutedEventArgs e)
+		{
+			var dlg = new OpenFileDialog();
+			if (dlg.ShowDialog() == false) return;
+
+			SaveData.Instance().Open(dlg.FileName, true);
+			DataContext = new ViewModel();
+		}
+
 		private void MenuItemFileSave_Click(object sender, RoutedEventArgs e)
 		{
 			SaveData.Instance().Save();
